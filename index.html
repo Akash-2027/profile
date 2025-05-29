@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akash's Profile</title>
+  <link rel="canonical" href="https://yourdomain.com/akashs-profile.html">
+  <link rel="icon" type="image/png" href="https://sdk.bitmoji.com/me/sticker/1wO6KjyLSlolLyBwpAvoliATyVeig0bGqzyNqTVZDdfaAIZmMxYFow/9281517.png?p=dD1wO3Y9eWVzO2w9ZW4.v1&size=thumbnail">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      overflow-x: hidden;
+      background: #000; /* Set solid black background */
+      /* If you want to use a black background image, use:
+      background: url('images/your-black-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      */
+    }
+    .left-border {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100vh;
+      background: linear-gradient(180deg, #7a9097, #0000009b);
+      z-index: 3;
+      box-shadow: 2px 0 10px #b6bcbe55;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 30px;
+      border: 8px solid #0f2b32;
+      display: block;
+    }
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      border: 2px solid #fff2;
+    }
+    .social-icon img {
+      width: 22px;
+      height: 22px;
+      filter: brightness(0) invert(1);
+    }
+    .social-icon:hover {
+      background: rgba(0,198,255,0.18);
+      border-color: #00c6ff;
+    }
+    .content-wrapper {
+      margin-left: 270px;
+      padding: 60px 30px;
+      color: #fff;
+      min-height: 200vh; /* Ensure scrollable content */
+      position: relative;
+      z-index: 2;
+    }
+    .center-content {
+      text-align: center;
+      margin-top: 80px;
+    }
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 40px 10px #00c6ff88, 0 0 0 8px rgba(255,255,255,0.12);
+      }
+      50% {
+        box-shadow: 0 0 60px 20px #00c6ffcc, 0 0 0 16px rgba(255,255,255,0.18);
+      }
+      100% {
+        box-shadow: 0 0 40px 10px #00c6ff88, 0 0 0 8px rgba(255,255,255,0.12);
+      }
+    }
+    #typewriter {
+      font-size: 1.05em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg, #9b968e, #efedea, #e0ddd6, #f4f4f4);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      filter: drop-shadow(0 0 6px #f8f8f788);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    /* Highlight and zoom effect for left-border nav items on hover */
+    .left-border ul li:hover {
+      transform: scale(1.12);
+      background: rgba(0,198,255,0.10);
+      border-radius: 12px;
+      transition: transform 0.18s, background 0.18s;
+    }
+    .left-border ul li:first-child:hover {
+      transform: scale(1.12);
+      background: rgba(0,198,255,0.10);
+      border-radius: 12px;
+      transition: transform 0.18s, background 0.18s;
+    }
+    @keyframes awards-logos-move {
+      0% { transform: translateX(0);}
+      50% { transform: translateX(20px);}
+      100% { transform: translateX(0);}
+    }
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+      display: block;
+      height: 0;
+      margin: 0;
+      border: none;
+    }
+    @media print {
+      .page-break {
+        display: block;
+      }
+    }
+    .left-border ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.18s;
+    }
+    .left-border ul li:hover a,
+    .left-border ul li.active a {
+      color: orange !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-border">
+    <!-- Profile image in left border -->
+    <img 
+      src="images/WhatsApp-Profile.jpeg" 
+      alt="Profile" 
+      class="profile-pic" 
+      style="margin: 40px auto 0 auto; display: block;"
+    >
+    <div style="text-align:center; color:#fff; font-size:1.3em; font-weight:bold; margin-top:10px; letter-spacing:2px;">
+      <span style="
+        background: linear-gradient(90deg, #00c6ff 40%, #a7bc2e 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 1.45em;
+        padding: 2px 16px;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px #00c6ff33;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 3px;
+        filter: drop-shadow(0 2px 8px #00c6ff55);
+      ">AKASH V</span>
+    </div>
+    <div style="display:flex; justify-content:center; gap:18px; margin-top:12px;">
+      <a href="https://github.com/Akash-2027" target="_blank" title="GitHub" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/akash-v-6a7a80322/" target="_blank" title="LinkedIn" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://twitter.com/" target="_blank" title="Twitter" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" />
+      </a>
+    </div>
+    <nav style="margin-top:30px;">
+      <ul style="list-style:none; padding:0; text-align:center;">
+        <li id="nav-home" style="margin: 18px 0; display: flex; align-items: center; justify-content: flex-start; padding-left: 18px;">
+          <img src="https://cdn-icons-gif.flaticon.com/17489/17489792.gif" alt="Home Icon" style="width:28px; height:28px; margin-right:10px; vertical-align:middle;" />
+          <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" style="color:#fff; text-decoration:none;"> Home</a>
+        </li>
+        <li id="nav-about" style="margin: 18px 0; display: flex; align-items: center; justify-content: flex-start; padding-left: 18px;">
+          <img src="https://cdn-icons-gif.flaticon.com/16104/16104294.gif" alt="About Icon" style="width:28px; height:28px; margin-right:10px; vertical-align:middle;" />
+          <a href="#about" style="color:#fff; text-decoration:none;"> About</a>
+        </li>
+        <li id="nav-resume" style="margin: 18px 0; display: flex; align-items: center; justify-content: flex-start; padding-left: 18px;">
+          <img src="https://cdn-icons-gif.flaticon.com/15332/15332443.gif" alt="Resume Icon" style="width:28px; height:28px; margin-right:10px; vertical-align:middle;" />
+          <a href="#resume" style="color:#fff; text-decoration:none;"> Resume</a>
+        </li>
+        <li id="nav-awards" style="margin: 18px 0; display: flex; align-items: center; justify-content: flex-start; padding-left: 18px;">
+          <img src="https://cdn-icons-gif.flaticon.com/16678/16678470.gif" alt="Awards Icon" style="width:28px; height:28px; margin-right:10px; vertical-align:middle;" />
+          <a href="#awards" style="color:#fff; text-decoration:none;"> Awards</a>
+        </li>
+        <li id="nav-contact" style="margin: 18px 0; display: flex; align-items: center; justify-content: flex-start; padding-left: 18px;">
+          <img src="https://cdn-icons-gif.flaticon.com/15578/15578570.gif" alt="Contact Icon" style="width:28px; height:28px; margin-right:10px; vertical-align:middle;" />
+          <a href="#contact" style="color:#fff; text-decoration:none;"> Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="center-content">
+      <div style="
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: radial-gradient(rgba(0,198,255,0.18) 60%, transparent 100%);
+        box-shadow: 0 0 40px 10px #00c6ff88, 0 0 0 8px rgba(255,255,255,0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: pulse 2s infinite;
+        margin: 0 auto;
+      ">
+        <img 
+          src="https://sdk.bitmoji.com/me/sticker/1wO6KjyLSlolLyBwpAvoliATyVeig0bGqzyNqTVZDdfaAIZmMxYFow/10219614.png?p=dD1wO3Y9eWF5O2w9ZW4.v1&size=thumbnail" 
+          alt="Haiii Center Sticker"
+          style="width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 4px 24px #0004; background: #fff;"
+        />
+      </div>
+      <div style="margin-top: 35px;">
+        <div>Alias in code: <span style="color:#00c6ff;">Debugger</span> / <span style="color:#00c6ff;">NightByte</span></div>
+        <div style="font-size: 0.95em; color: #b6eaff;">But IRL, I’m</div>
+        <div style="color: #a7bc2e; font-size: 1.75em; font-weight: bold; letter-spacing: 2px;">AKASH V</div>
+        <div id="typewriter"></div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" style="margin-top: 60px; background: rgba(0,0,0,0.18); border-radius: 18px; padding: 38px 28px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 24px #00c6ff22;">
+      <h2 style="color:#00c6ff; margin-bottom: 18px; letter-spacing: 2px;">About</h2>
+      <p style="font-size:1.15em; color:#eaf6fa; line-height:1.7;">
+        Hi, I’m Akash V, a passionate and driven third-year B.Tech Information Technology student at Bannari Amman Institute of Technology. I specialize in software development and have a growing interest in cloud-based security solutions. My academic journey and hands-on projects have equipped me with a solid foundation in development tools and cloud platforms, allowing me to build secure, scalable applications.
+      </p>
+    </section>
+    <div class="page-break"></div>
+
+    <!-- Resume Section -->
+    <section id="resume" style="margin-top: 60px; background: rgba(0,0,0,0.18); border-radius: 10px; padding: 38px 28px; max-width: 500px; margin-left: 70px; margin-right: auto; box-shadow: 0 2px 24px #00c6ff22;">
+      <h2 style="color:#00c6ff; margin-bottom: 18px; letter-spacing: 2px;">Resume</h2>
+      <p style="font-size:1.1em; color:#eaf6fa;">
+        View my resume as a full page below:
+      </p>
+      <div style="margin-top:18px; text-align:center;">
+        <a 
+          href="resume.pdf" 
+          target="_blank"
+          style="display:inline-block; padding:8px 18px; background:#00c6ff; color:#fff; border:none; border-radius:8px; font-size:1em; font-weight:bold; text-decoration:none; margin-bottom:15px; transition:background 0.2s;">
+          📄 View My Resume (PDF)
+        </a>
+      </div>
+      <div style="margin: 28px auto 0 auto; display: flex; align-items: flex-start; justify-content: center; gap: 32px;">
+        <!-- Resume preview image -->
+        <img 
+          src="images/Screenshot 2025-05-28 113722.png" 
+          alt="Resume Preview"
+          style="width:320px; height:auto; border-radius:10px; object-fit:cover; box-shadow:0 2px 12px #00c6ff44;"
+        />
+        <div style="text-align:left; color:#eaf6fa; font-size:1em; line-height:1.8; max-width: 240px; min-width:200px;">
+          <div>
+            <span style="background:#00c6ff; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Birthday:</span>
+            20/11/2005
+          </div>
+          <div>
+            <span style="background:#ff9800; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Place:</span>
+            <span style="display:inline-block;">
+              Coimbatore, Galaxy
+            </span>
+          </div>
+          <div>
+            <span style="background:#4caf50; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Age:</span>
+            20
+          </div>
+          <div>
+            <span style="background:#e91e63; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Degree:</span>
+            <span style="display:inline;">Bachelor of Technology</span>
+          </div>
+          <div>
+            <span style="background:#9c27b0; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Email:</span>
+            <a href="mailto:akash.it2027@gmail.com" style="color:#00c6ff; text-decoration:none;">akash.it2027@gmail.com</a>
+          </div>
+          <div>
+            <span style="background:#607d8b; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Phone:</span>
+            <a href="tel:+919003606802" style="color:#00c6ff; text-decoration:none;">+91 9003606802</a>
+          </div>
+          <div style="margin-top:14px; color:#a7bc2e; font-style:italic; font-size:1.05em;">
+            “Aspiring developer, learning each day to build a better tomorrow.”
+          </div>
+          <div style="margin-top:18px;">
+            <span style="background:#ff5722; color:#fff; padding:2px 10px; border-radius:6px; font-weight:bold;">Hobbies:</span>
+            <div style="display: flex; gap: 12px; align-items: center; margin-top:8px;">
+              <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsexKfwOxU_BRJ4wUzRrl2ZA7yhbbOa3P_Sg&s" 
+                alt="Gamer Logo" 
+                style="width:48px; height:48px; border-radius:8px; object-fit:cover; box-shadow:0 2px 8px #00c6ff44;"
+              />
+              <img 
+                src="https://www.kindpng.com/picc/m/495-4956347_research-main-icon-01-research-background-logo-png.png" 
+                alt="Research Logo" 
+                style="width:48px; height:48px; border-radius:8px; object-fit:cover; box-shadow:0 2px 8px #00c6ff44;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" style="margin-top: 60px; background: rgba(0,0,0,0.18); border-radius: 18px; padding: 38px 28px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 24px #00c6ff22;">
+      <h2 style="color:#00c6ff; margin-bottom: 28px; letter-spacing: 2px;">Skills</h2>
+      <div style="display: flex; gap: 32px; flex-wrap: wrap;">
+        <!-- Column 1 -->
+        <div style="flex: 1 1 0; min-width: 250px;">
+          <div style="margin-bottom: 28px;">
+            <span style="color:#eaf6fa; font-weight:bold;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width:24px; vertical-align:middle; margin-right:8px;">
+              Python
+            </span>
+            <span style="float:right; color:#00c6ff; font-weight:bold;">70%</span>
+            <div style="background:#23343b; border-radius:8px; height:14px; margin-top:8px;">
+              <div style="width:70%; background:linear-gradient(90deg,#00c6ff,#0072ff); height:100%; border-radius:8px;"></div>
+            </div>
+          </div>
+          <div style="margin-bottom: 28px;">
+            <span style="color:#eaf6fa; font-weight:bold;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" style="width:24px; vertical-align:middle; margin-right:8px;">
+              Node.js
+            </span>
+            <span style="float:right; color:#00c6ff; font-weight:bold;">60%</span>
+            <div style="background:#23343b; border-radius:8px; height:14px; margin-top:8px;">
+              <div style="width:60%; background:linear-gradient(90deg,#00c6ff,#0072ff); height:100%; border-radius:8px;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2 -->
+        <div style="flex: 1 1 0; min-width: 250px;">
+          <div style="margin-bottom: 28px;">
+            <span style="color:#eaf6fa; font-weight:bold;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Cloud AI" style="width:24px; vertical-align:middle; margin-right:8px;">
+              Cloud & AI
+            </span>
+            <span style="float:right; color:#00c6ff; font-weight:bold;">60%</span>
+            <div style="background:#23343b; border-radius:8px; height:14px; margin-top:8px;">
+              <div style="width:60%; background:linear-gradient(90deg,#00c6ff,#0072ff); height:100%; border-radius:8px;"></div>
+            </div>
+          </div>
+          <div style="margin-bottom: 28px;">
+            <span style="color:#eaf6fa; font-weight:bold;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="DevOps" style="width:24px; vertical-align:middle; margin-right:8px;">
+              DevOps
+            </span>
+            <span style="float:right; color:#00c6ff; font-weight:bold;">65%</span>
+            <div style="background:#23343b; border-radius:8px; height:14px; margin-top:8px;">
+              <div style="width:65%; background:linear-gradient(90deg,#00c6ff,#0072ff); height:100%; border-radius:8px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <!-- Awards Section with heading above the image and content -->
+    <section id="awards" style="margin-top: 60px; background: rgba(0,0,0,0.18); border-radius: 18px; padding: 38px 28px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 24px #00c6ff22;">
+      <h2 style="color:#00c6ff; margin-bottom: 24px; letter-spacing: 2px; text-align:center;">Awards</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 28px; justify-content: center;">
+        <!-- All images below have the same size and border radius -->
+        <a href="images/Screenshot 2025-04-02 154236.png" target="_blank">
+          <img 
+            src="images/Screenshot 2025-04-02 154236.png" 
+            alt="Awards Image 1"
+            style="width:150px; height:150px; border-radius:16px; object-fit:cover; box-shadow:0 2px 18px #00c6ff22; cursor: pointer;"
+          />
+        </a>
+        <a href="images/Screenshot 2025-04-05 145408.png" target="_blank">
+          <img 
+            src="images/Screenshot 2025-04-05 145408.png" 
+            alt="Awards Image 2"
+            style="width:150px; height:150px; border-radius:16px; object-fit:cover; box-shadow:0 2px 18px #00c6ff22; cursor: pointer;"
+          />
+        </a>
+        <a href="images/Screenshot 2025-05-28 113134.png" target="_blank">
+          <img 
+            src="images/Screenshot 2025-05-28 113134.png" 
+            alt="Awards Image 3"
+            style="width:150px; height:150px; border-radius:16px; object-fit:cover; box-shadow:0 2px 18px #00c6ff22; cursor: pointer;"
+          />
+        </a>
+        <a href="images/Screenshot 2025-05-28 113154.png" target="_blank">
+          <img 
+            src="images/Screenshot 2025-05-28 113154.png" 
+            alt="Awards Image 4"
+            style="width:150px; height:150px; border-radius:16px; object-fit:cover; box-shadow:0 2px 18px #00c6ff22; cursor: pointer;"
+          />
+        </a>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <!-- Badges Section -->
+    <section id="badges" style="margin-top: 40px; background: rgba(0,0,0,0.18); border-radius: 18px; padding: 32px 28px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 24px #00c6ff22;">
+      <h2 style="color:#00c6ff; margin-bottom: 24px; letter-spacing: 2px; text-align:center;">Badges</h2>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap;">
+        <!-- IBM Python for Data Science Badge -->
+        <a href="https://www.credly.com/org/ibm/badge/python-for-data-science" target="_blank" style="display:inline-block;">
+          <img 
+            src="https://images.credly.com/images/b40db465-587f-45eb-a854-af8630a630e7/blob" 
+            alt="IBM Python for Data Science Badge"
+            style="width:90px; height:90px; border-radius:12px; object-fit:cover; box-shadow:0 2px 12px #00c6ff55; background:#fff; padding:6px; cursor:pointer;"
+          />
+        </a>
+        <!-- Add more badges here if needed -->
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" style="margin-top: 60px; background: rgba(0,0,0,0.18); border-radius: 18px; padding: 38px 28px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 24px #00c6ff22;">
+      <h2 style="color:#00c6ff; margin-bottom: 18px; letter-spacing: 2px;">Contact</h2>
+      <p style="font-size:1.1em; color:#eaf6fa;">
+        I’d love to hear from you! Whether you have a question or just want to connect, feel free to reach out:
+      </p>
+      <ul style="color:#eaf6fa; padding-left: 20px; text-align: left;">
+        <li style="margin: 10px 0;">
+          📧 Email: <a href="mailto:akash.vijayan@example.com" style="color:#00c6ff; text-decoration:none;">akash.vijayan@example.com</a>
+        </li>
+        <li style="margin: 10px 0;">
+          📱 Phone: <span style="color:#00c6ff;">+91 900360 6802</span>
+        </li>
+        <li style="margin: 10px 0;">
+          🌐 Website: <a href="https://yourdomain.com" target="_blank" style="color:#00c6ff; text-decoration:none;">yourdomain.com</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    const words = ["I'm a DEVELOPER.", "I'm a GAMER."];
+    const el = document.getElementById('typewriter');
+    let wordIndex = 0;
+    let charIndex = 0;
+
+    function typeWriter() {
+      if (charIndex < words[wordIndex].length) {
+        el.textContent = words[wordIndex].slice(0, charIndex + 1);
+        charIndex++;
+        setTimeout(typeWriter, 60);
+      } else {
+        setTimeout(() => {
+          wordIndex = (wordIndex + 1) % words.length;
+          charIndex = 0;
+          setTimeout(typeWriter, 500);
+        }, 1000);
+      }
+    }
+    typeWriter();
+
+    // Highlight current section in left nav
+    const navMap = [
+      {id: "nav-home", anchor: null},
+      {id: "nav-about", anchor: "about"},
+      {id: "nav-resume", anchor: "resume"},
+      {id: "nav-awards", anchor: "awards"},
+      {id: "nav-contact", anchor: "contact"}
+    ];
+    const sectionOffsets = navMap.map(item => {
+      if (!item.anchor) return 0;
+      const el = document.getElementById(item.anchor);
+      return el ? el.offsetTop : 0;
+    });
+
+    function updateActiveNav() {
+      const scroll = window.scrollY + 120; // adjust offset for header
+      let activeIdx = 0;
+      for (let i = 1; i < sectionOffsets.length; i++) {
+        if (scroll >= sectionOffsets[i]) activeIdx = i;
+      }
+      for (let i = 1; i < sectionOffsets.length; i++) {
+        if (scroll >= sectionOffsets[i]) activeIdx = i;
+      } if (li) {
+      navMap.forEach((item, idx) => {lassList.add('active');
+        const li = document.getElementById(item.id);
+        if (li) {
+          if (idx === activeIdx) li.classList.add('active');
+          else li.classList.remove('active');
+        }w.addEventListener('scroll', updateActiveNav);
+      });w.addEventListener('DOMContentLoaded', updateActiveNav);
+    }cript>
+    window.addEventListener('scroll', updateActiveNav);
+    window.addEventListener('DOMContentLoaded', updateActiveNav);
+  </script></body></html>
